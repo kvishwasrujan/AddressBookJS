@@ -82,9 +82,14 @@ class Contact{
         else throw "incorrect email Id"
     }
 }
-let contact1 = new Contact("Goku","Saiyan","2-4-1239","Warangal","Telangana","506001","7207649566","goku.saiyan@gmailcom")
-let contact2 = new Contact("Gohan","Saiyan","2-4-1239","Warangal","Telangana","506001","9999999999","gohan.saiyan@gmailcom")
+let contact1 = new Contact("Goku","Saiyan","GandhiNagar","Warangal","Telangana","506001","7207649566","goku.saiyan@gmail.com")
+let contact2 = new Contact("Gohan","Saiyan","GandhiNagar","Warangal","Telangana","506001","9999999999","gohan.saiyan@gmail.com")
 let addressBook = new Array();
 addressBook.push(contact1)
 addressBook.push(contact2)
+console.log(addressBook)
+function searchForContact(contact){
+    return contact.firstName.includes("Goku")
+}
+addressBook.find(searchForContact).firstName = "Goku"
 console.log(addressBook)
