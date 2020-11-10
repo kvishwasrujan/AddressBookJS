@@ -95,3 +95,7 @@ addressBook.find(searchForContact).firstName = "Gokui"
 console.log(addressBook)
 addressBook.pop(addressBook.find(searchForContact))
 console.log("Pop"+addressBook)
+function totalContacts(totalContacts){
+    return ++totalContacts
+}
+console.log(" total contacts in address book:"+addressBook.reduce(totalContacts,0))
