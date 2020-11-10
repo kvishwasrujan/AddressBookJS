@@ -91,5 +91,7 @@ console.log(addressBook)
 function searchForContact(contact){
     return contact.firstName.includes("Goku")
 }
-addressBook.find(searchForContact).firstName = "Goku"
+addressBook.find(searchForContact).firstName = "Gokui"
 console.log(addressBook)
+addressBook.pop(addressBook.find(searchForContact))
+console.log("Pop"+addressBook)
